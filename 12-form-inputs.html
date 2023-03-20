@@ -18,13 +18,87 @@
         <input type="tel" name="phone"><br>
         <input type="hidden" name="code"><br>  <!--kullanıcının görmesine gerek olmayan arka taraftaki bilgileri gizliyor-->
 
+
+        <input type="checkbox" name="user" id="usr"> 
+        <label for="usr"> Kullanıcı sözleşmesini okudum </label><br>
+
+        <input type="checkbox" name="sales" id="sl">
+        <label for="sl"> Satış sözleşmesini okudum </label><br>
+
+        <input type="radio" name="gender" id="genderM" checked>
+        <label for="genderM">Erkek</label>
+
+        <input type="radio" name="gender" id="genderF">
+        <label for="genderF">Kadın</label> <br>
+
+        <input type="file" name="avatar"><br>
+
+        <input type="color" name="renk"><br>
+
+        <input type="range" name="salary"><br>
+
+        <input type="date" name="dogum"><br>
+
+        <input type="time" name="departureTime"><br>
+
+        <input type="datetime-local" name="dt"><br>
+
+        <input type="month" name="mn"> <br>
+
+        <input type="week" name="wk"><br>
+
+        <select name="city">
+            <option value=""disabled selected>Seçiniz</option>
+            <option value="">İstanbul</option>
+            <option value="">İzmir</option>
+            <option value="">Ankara</option>
+        </select><br>
+
+        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+
+
+
+
         <input type="button" value="Custom">
         <input type="submit" value="Save">
         <input type="reset" value="Reset">
 
         <!--button un herhangi bir görevi yoktur.
         submit in görevi formdaki bilgileri derleyip toplayıp actiona gönderiyor.
-        reset ise formdaki bilgileri reset ediyor.-->
+        reset ise formdaki bilgileri reset ediyor.
+
+        checkbox- kutucuk içindeki tik. okudum anladım gibi. 
+        radio-name'leri aynı yaparsak bir grup gibi algılıyor. sadece birini seçmek zorunda kalıyoruz
+
+        checked- default olarak işaretli gelmesi için kullanılıyor
+
+        file-kullanıcıya dosya seçtirmek için kullanıyoruz
+
+        color-renk seçmek için kullanıyoruz
+
+        range-aralık belirlemek için kullanılıyor. ses ayarı belirleme gibi kullanılabilir
+
+        date-tarih kutusu geliyor.
+
+        time-saat kutusu geliyor.
+
+        datetime-local-hem tarih hem de saati birlikte seçeceğimiz kutu geliyor
+
+        month-ay ve yılı seçebilceğimiz kutu geliyor
+
+        week-hafta seçiyoruz
+
+        select--açılan bir sayfa yapıyor. value backend tarafına giden değer oluyor.
+        boş bıakırsak optiona yazdığımız şey backende gidiyor.
+
+        textarea--birden fazla satır girilebilen text kutusu. özgeçmişinizi,şikayet yazmak için kullanılır
+
+
+    
+    
+    
+    
+    -->
 
     </form>
     
