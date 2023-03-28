@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+      <table>
+        <tr>
+            <td> <label for="ep">Eposta</label> </td>
+            <td> <input required type="email" name="eposta" id="ep" placeholder="info@example.com"> </td>
+            <!--id ile input label ile ilişkilendiriyoruz. label a da for yazıyoruz
+            epostanın üstüne bastığınızda kurucuk aktif oluyor
+            - placeholder ise değer değildir. nasıl bir veri gireceğimizi hangi şekilde onu belirtiyoruz
+            kutucukta silik şekilde duruyor
+            - name: controllerdaki parametre isimlerini yazıyoruz. onlarla birebir aynı olmak zorunda
+        
+            required-e posta girilmesi zorunlu
+            minlength-en az şu kadar karakter girilmeli
+            maxlength-en fazla şu kadar karakter     
+        
+                -->
+        </tr>
+        <tr>
+            <td><label>Şifre</label></td>
+            <td> <input minlength="3" maxlength="10" type="password" name="sifre"></td>
+        </tr>
+        <tr>
+            <td><label>Güvenlik kodu</label></td>
+            <td> <input type="number" name="kod" value="12314" readonly></td>
+            <!--readonly değişiklik yapılamıyor. value ile kutucuğa değer atadık ve readonly ile
+            onu değiştirilemez yapıyoruz-->
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit"> Kaydet </button>
+                <button type="reset"> Temizle </button>
+                <!--disabled tıklama kutucuğu aktif olmuyor-->
+            </td>
+        </tr>
+      </table>
+
+    </form>
+
+    <!--
+        baclink-- sitenize başka bir site tarafından link verilmesi. ne kadar çok backlink'iniz varsa
+        puanınız o kadar yüksek olur. siteniz daha değerli olur.
+        
+    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
